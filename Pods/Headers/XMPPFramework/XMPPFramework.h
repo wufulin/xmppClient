@@ -1,0 +1,1 @@
+../../XMPPFramework/Xcode/Testing/MUCTesting/XMPPFramework.h
