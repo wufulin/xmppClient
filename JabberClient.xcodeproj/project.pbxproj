@@ -18,9 +18,15 @@
 		69A84C0B17BE0EAD00177235 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A84C0A17BE0EAD00177235 /* Default-568h@2x.png */; };
 		69A84C0E17BE0EAD00177235 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A84C0D17BE0EAD00177235 /* ViewController.m */; };
 		69A84C1117BE0EAD00177235 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A84C0F17BE0EAD00177235 /* ViewController.xib */; };
+		69A84FBD17BE234000177235 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A84FBB17BE234000177235 /* LoginViewController.m */; };
+		69A84FBE17BE234000177235 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A84FBC17BE234000177235 /* LoginViewController.xib */; };
+		69A84FC217BE268900177235 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A84FC017BE268900177235 /* ChatViewController.m */; };
+		69A84FC317BE268900177235 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A84FC117BE268900177235 /* ChatViewController.xib */; };
+		7CC49B27703C4351B85C00E3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75275C92C314430CA4C32656 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D557B6F4C51444A9856764C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		69A84BF117BE0EAC00177235 /* JabberClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JabberClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A84BF417BE0EAC00177235 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		69A84BF617BE0EAC00177235 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +43,13 @@
 		69A84C0C17BE0EAD00177235 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		69A84C0D17BE0EAD00177235 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		69A84C1017BE0EAD00177235 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		69A84FBA17BE234000177235 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		69A84FBB17BE234000177235 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		69A84FBC17BE234000177235 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		69A84FBF17BE268900177235 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		69A84FC017BE268900177235 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		69A84FC117BE268900177235 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		75275C92C314430CA4C32656 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 				69A84BF517BE0EAC00177235 /* UIKit.framework in Frameworks */,
 				69A84BF717BE0EAC00177235 /* Foundation.framework in Frameworks */,
 				69A84BF917BE0EAC00177235 /* CoreGraphics.framework in Frameworks */,
+				7CC49B27703C4351B85C00E3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +73,7 @@
 				69A84BFA17BE0EAC00177235 /* JabberClient */,
 				69A84BF317BE0EAC00177235 /* Frameworks */,
 				69A84BF217BE0EAC00177235 /* Products */,
+				2D557B6F4C51444A9856764C /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,7 @@
 				69A84BF417BE0EAC00177235 /* UIKit.framework */,
 				69A84BF617BE0EAC00177235 /* Foundation.framework */,
 				69A84BF817BE0EAC00177235 /* CoreGraphics.framework */,
+				75275C92C314430CA4C32656 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,6 +104,12 @@
 				69A84C0C17BE0EAD00177235 /* ViewController.h */,
 				69A84C0D17BE0EAD00177235 /* ViewController.m */,
 				69A84C0F17BE0EAD00177235 /* ViewController.xib */,
+				69A84FBA17BE234000177235 /* LoginViewController.h */,
+				69A84FBB17BE234000177235 /* LoginViewController.m */,
+				69A84FBC17BE234000177235 /* LoginViewController.xib */,
+				69A84FBF17BE268900177235 /* ChatViewController.h */,
+				69A84FC017BE268900177235 /* ChatViewController.m */,
+				69A84FC117BE268900177235 /* ChatViewController.xib */,
 				69A84BFB17BE0EAC00177235 /* Supporting Files */,
 			);
 			path = JabberClient;
@@ -114,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69A84C1417BE0EAD00177235 /* Build configuration list for PBXNativeTarget "JabberClient" */;
 			buildPhases = (
+				7E88A24988704F3A9716CC7C /* Check Pods Manifest.lock */,
 				69A84BED17BE0EAC00177235 /* Sources */,
 				69A84BEE17BE0EAC00177235 /* Frameworks */,
 				69A84BEF17BE0EAC00177235 /* Resources */,
+				630E0E920B94480D90573CE6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,10 +187,45 @@
 				69A84C0917BE0EAD00177235 /* Default@2x.png in Resources */,
 				69A84C0B17BE0EAD00177235 /* Default-568h@2x.png in Resources */,
 				69A84C1117BE0EAD00177235 /* ViewController.xib in Resources */,
+				69A84FBE17BE234000177235 /* LoginViewController.xib in Resources */,
+				69A84FC317BE268900177235 /* ChatViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		630E0E920B94480D90573CE6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E88A24988704F3A9716CC7C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		69A84BED17BE0EAC00177235 /* Sources */ = {
@@ -176,6 +235,8 @@
 				69A84C0117BE0EAD00177235 /* main.m in Sources */,
 				69A84C0517BE0EAD00177235 /* AppDelegate.m in Sources */,
 				69A84C0E17BE0EAD00177235 /* ViewController.m in Sources */,
+				69A84FBD17BE234000177235 /* LoginViewController.m in Sources */,
+				69A84FC217BE268900177235 /* ChatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,22 +320,26 @@
 		};
 		69A84C1517BE0EAD00177235 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D557B6F4C51444A9856764C /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JabberClient/JabberClient-Prefix.pch";
 				INFOPLIST_FILE = "JabberClient/JabberClient-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		69A84C1617BE0EAD00177235 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D557B6F4C51444A9856764C /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JabberClient/JabberClient-Prefix.pch";
 				INFOPLIST_FILE = "JabberClient/JabberClient-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -298,6 +363,7 @@
 				69A84C1617BE0EAD00177235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,7 +10,29 @@
 
 #import "ViewController.h"
 
+@interface AppDelegate ()
+- (void)setupStream;
+- (void)goOnline;
+- (void)goOffline;
+@end
+
 @implementation AppDelegate
+
+@synthesize xmppStream;
+
+- (void)setupStream {
+    xmppStream = [[XMPPStream alloc] init];
+    [xmppStream addDelegate:self delegateQueue:dispatch_get_main_queue()];
+}
+
+- (void)goOnline {
+    XMPPPresence *presence = [XMPPPresence presence];
+    [[self xmppStream] sendElement:presence];
+}
+
+- (void)goOffline {
+//    XMPPPresence *presence =
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

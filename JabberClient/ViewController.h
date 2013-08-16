@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate> {
+    __weak UITableView *tableView;
+    NSMutableArray *onlineBuddies;
+}
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)showLogin:(id)sender;
 
 @end

@@ -7,13 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMPP.h"
 
 @class ViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    NSString *password;
+    BOOL isOpen;
+    XMPPStream *xmppStream;
+}
 
+@property (readonly, nonatomic) XMPPStream *xmppStream;
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) ViewController *viewController;
+
+- (BOOL)connect;
+- (void)disconnect;
 
 @end
